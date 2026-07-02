@@ -65,7 +65,34 @@
                 </datalist>
             </p>
 
-            
+
+      <label for="instituicao">Onde voce foca seus estudos?</label><br>
+       <select id="instituicao" name="instituicao">
+        <optgroup label="Ensino tecnico e regular">
+        <option value="escola">Escola</option>
+        <option value="etc">Escola Técnica</option>
+        </optgroup>
+        <optgroup label="Projestos e Ensino Superior"> 
+        <option value="ong">fabricas de cultura/ONG local</option>
+        <option value="cursinho">Cursinho popular</option>
+        </optgroup>
+
+       </select>
+    <p>
+<label for="acessorios">Quais acessórios completam o seu kit?</label><br>
+<select id="acessorios" name="acessorios" multiple size="4">
+    <option value="boné">Boné de marca</option>
+    <option value="corrente">Corrente de ouro</option>              
+    <option value="pulseira">Pulseira de couro</option>
+    <option value="relógio">Relógio de grife</option>
+</select>
+    </p>
+    <p><br>
+
+    <label for="notaEstilo">De 0 a 10, o quanto a moda representa a sua identidade?</label><br>
+    <input type="range" id="notaEstilo" name="notaEstilo" min="0" max="10" value="5">
+    <span>nota seleccionada:
+        <output name="resultadoNota" for="notaEstilo">5</output>
 
         </form>
     </div>
